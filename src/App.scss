@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$card-bg-color: #00427D;
+$text-color: #171722;
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+  background: #DFDEE1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  background-color: #286da8;
+  border-radius: 5px;
+}
+
+.todo-wrapper {
+  background: #f5f6fa;
+  margin-top: 8rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.todo-form {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: $text-color;
+}
+
+.todo-input::placeholder {
+  color: #fffcfc;
+}
+
+.todo-btn {
+  background: $card-bg-color;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  margin-left: 10px;
+  min-width: 77px;
+  border-radius: 5px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: $text-color;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.unfinished {
+  display: flex;
+  color: $text-color;
+  cursor: pointer;
+  min-width: 250px;
+  align-content: start;
+}
+
+.finished {
+  display: flex;
+  color: #9F9CA7;
+  cursor: pointer;
+  min-width: 250px;
+  align-content: start;
+  text-decoration: line-through;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+.snackbar {
+	position: absolute;
+	display: none;
+	padding: 1em 2em;
+	align-items: center;
+	justify-content: space-between;
+	width: min(100%, 320px);
+	height: min-content;
+	border-radius: 4px;
+}
+
+.snackbar button {
+	all: unset;
+	cursor: pointer;
+  margin-left: 10px;
+}
+
+.top-center {
+	top: 2rem;
+}
+
+.item-btns {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.app {
+	width: 100%;
+	display: flex;
+	min-height: 100vh;
+  text-align: center;
+	flex-direction: column;
+}
+
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+  color: $text-color;
+}
